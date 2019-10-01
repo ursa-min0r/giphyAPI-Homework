@@ -3,16 +3,30 @@ body {
     align-items: center;
     text-align: center;
     color: #000;
-    background-color: cornsilk;
+    background-image: url("https://wallpapertag.com/wallpaper/full/0/1/1/958528-cute-dinosaur-backgrounds-1920x1080-meizu.jpg");
+    background-image: fixed;
+    background-size: 95%;
 }
 
+.card {
+
+    
+
+    align-items: center;
+    text-align: center;
+    color: #000;
+    background-color: cornsilk;
+
+
+
+}
 
 button {
     align-items: center;
     text-decoration-color: black;
     background-color: rgb(224, 168, 252);
     border-radius: 8px;
-    width: 100px;
+    width: 250px;
 }
 
 button:hover {
@@ -24,3 +38,5 @@ button:active {
     box-shadow: 0 5px rgb(0, 0, 0);
     transform: translateY(4px);
 }
+
+
