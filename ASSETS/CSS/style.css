@@ -1,0 +1,40 @@
+#gifs-appear-here {
+
+    text-align: center;
+    color: #000;
+    background-color: cornsilk;
+
+}
+
+body {
+
+align-items: center;
+
+
+
+
+}
+
+button {
+
+ align-items: center;
+ text-decoration-color: black;
+ background-color: rgb(224, 168, 252);
+ border-radius: 8px;
+ width: 250px;
+
+}
+
+
+button:hover {
+     
+background-color: #ecd1fc;
+
+}
+
+button:active {
+  background-color:rgb(224, 168, 252);
+  box-shadow: 0 5px rgb(0, 0, 0);
+  transform: translateY(4px);
+
+}
