@@ -39,3 +39,11 @@ button:active {
 }
 
 
+@media only screen and (max-width: 980px) {
+    .body1 {
+      width: 400px;
+    }
+  
+  
+  
+  }
