@@ -1,3 +1,4 @@
+
 $("button").on("click", function () {
     var dinosaur = $(this).attr("data-name");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
@@ -36,5 +37,31 @@ $("button").on("click", function () {
 
 });
 
+$( document ).ready(function(){
 
-  
+   
+    $(".search-button").on('click', function(){
+
+      
+      var userInput = $('#form-value').val().trim();
+      
+      var queryURL = 'http://api.giphy.com/v1/gifs/search?q=' + userInput + '&api_key=0FEUTWqxcNww2JBF5jHJ8ehQQYva0Z9a&limit=10';
+
+      $.ajax({url: queryURL, method: 'GET'}).done(function(response){
+
+        var giphyURL = response.data[0].images.fixed_height.url;
+       
+        $("#gifs-appear-here").attr("src", giphyURL);
+
+      });
+
+      
+      $("#reset-button").on("click", function(){
+       
+        $("#gifs-appear-here").attr("src", "");
+      })
+
+      return false;
+    })
+
+  });
