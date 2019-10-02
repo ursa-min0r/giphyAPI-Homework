@@ -65,3 +65,26 @@ $( document ).ready(function(){
     })
 
   });
+
+$(".gif").on("click", function() {
+   
+    var state = $(this).attr("data-state");
+   
+    if (state === "still") {
+      $(this).attr("src", $(this).attr("data-animate"));
+      $(this).attr("data-state", "animate");
+    } else {
+      $(this).attr("src", $(this).attr("data-still"));
+      $(this).attr("data-state", "still");
+    }
+  });
+
+
+
+  // I couldn't figure out how to make the buttons and track the user input without breaking my code.
+ // I know I need to render buttons and capture a user input and turn it into a variable to pull information from,
+ // but I just couldn't get the code right.
+ // The button does let a user search, but only once (lol?), and then it pulls random images not related to the search term.
+ // The pause/play was also a challenge because I know exactly what to do, but it just wouldn't come together.
+ // *sad face*
+
